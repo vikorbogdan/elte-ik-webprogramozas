@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1. gyakorlat</title>
+  </head>
+  <body>
+    <h1>Címsor</h1>
+    <p class="kiscica">Szeretem a kiscicákat mert aranyosak.</p>
+    <table>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+      </tr>
+    </table>
+    <script>
+      // Egysoros komment
+      /*
+      többsoros komment
+      */
+      // Szöveg kiírása fejlesztői konzolra
+      console.log("Hello Világ!");
+
+      // Változók
+      let a = 5;
+      const b = 6;
+
+      let szoveg = "Lorem ipsum";
+      let hibauzenet = "Hiba történt sajnos";
+      // var c = 7; -> Elavult
+
+      let logikai1 = true;
+      let logikai2 = false;
+      let logikai3 = 2 < 4;
+
+      // Console lognak több paraméter is átadható
+      console.log(a, szoveg, "alma", logikai1, logikai2, logikai3);
+      console.error(hibauzenet);
+
+      // Vezérlési szerkezetek
+      if (logikai2) {
+        console.log("Igaz");
+      } else if (logikai3) {
+        console.log("logikai3");
+      } else {
+        console.log("ide nem jutok el lol");
+      }
+
+      for (let i = 0; i < 10; i++) {
+        console.log(i);
+      }
+      console.log("_______________");
+      let j = 0;
+      while (j < 10) {
+        console.log(j);
+        j++;
+      }
+      console.log("_______________");
+      let k = 0;
+      do {
+        console.log(k);
+        k++;
+      } while (k < 10);
+
+      let tomb1 = [1, "egy", true, [[], "string", 4], false];
+      tomb1[30] = "kiskutya";
+      for (let i = 0; i < tomb1.length; i++) {
+        console.log(tomb1[i]);
+      }
+      console.log(tomb1);
+      console.log("__________-----");
+      for (elem of tomb1) {
+        console.log("FOROF:", elem);
+      }
+      console.log("__________-----");
+      for (index in tomb1) {
+        console.log(tomb1[index]);
+      }
+
+      // Függvények
+
+      function osszeadas(a) {
+        return a + 1;
+      }
+
+      function kiiras(a) {
+        console.log("függvény: ", a);
+      }
+
+      console.log(osszeadas(2));
+
+      let tomb = [1, 2, 3, 4, 5, 6, 3];
+      /* Tömbfüggvények */
+      // forEach -> Lefuttat egy adott függvényt minden elemre
+      tomb.forEach((elem) => kiiras(elem));
+      // map -> Leképezést készít egy tömbről, azáltal, hogy lefuttat minden elemre egy függvényt (visszatérési értékkel)
+      tomb2 = tomb.map((elem) => elem * 2);
+      // indexOf -> Egy érték első előfordulásának indexét adja meg
+      console.log(tomb.indexOf(5));
+      // lastIndexOf -> Egy érték utolsó előfordulásának indexét adja meg
+      console.log(tomb.lastIndexOf(3));
+      // every -> Megadja, hogy egy adott feltétel teljesül-e a tömb összes elemére
+      console.log(tomb.every((elem) => elem > 5));
+      // some -> Megadja, hogy van-e olyan elem a tömbben, amire teljesül egy adott feltétel.
+      console.log(tomb.some((elem) => elem > 5));
+      // push -> Hozzáad egy elemet a tömbhöz (végére)
+      tomb.push("cica");
+      console.log(tomb);
+      // pop -> Eltávolít egy elemet a tömb végéről
+      tomb.pop();
+      console.log(tomb);
+      console.log(tomb2);
+    </script>
+  </body>
+</html>
