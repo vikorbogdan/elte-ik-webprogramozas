@@ -1,0 +1,24 @@
+/*Zöld : #d5f2d6 */
+/*Kék: #dfe5ff */
+body{
+    margin:0;
+}
+h2{
+    background-color: #d5f2d6;
+    display: block;
+    margin: 0;
+    padding: 10px 5px;
+    cursor: pointer;
+    user-select: none;
+}
+
+p{
+    margin:0;
+    background-color: #dfe5ff;
+    padding: 20px 10px;   
+    display: none;
+}
+
+.visible {
+    display: block;
+}
