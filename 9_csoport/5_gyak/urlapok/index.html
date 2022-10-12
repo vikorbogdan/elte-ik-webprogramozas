@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Űrlapok</title>
+  </head>
+  <body>
+    <form action="">
+      <ul id="hibak"></ul>
+      Név:
+      <input type="text" id="nev" /> <br />
+      Kor:
+      <input type="text" id="kor" /> <br />
+      Érdeklődési terület:
+      <select id="erd">
+        <option value="">Kérem, válasszon...</option>
+        <option value="film">Film</option>
+        <option value="olvasas">Olvasás</option>
+        <option value="sport">Sport</option>
+      </select>
+      <br />
+      Válaszd ki a kedvenc mesédet: <br />
+      <input type="radio" name="rajzfilmek" id="rajzfilm1" value="trolls" />
+      <label for="rajzfilm1">Trolls</label><br />
+      <input type="radio" name="rajzfilmek" id="rajzfilm2" value="shrek_2" />
+      <label for="rajzfilm2">Shrek 2</label><br />
+      <input type="radio" name="rajzfilmek" id="rajzfilm3" value="encanto" />
+      <label for="rajzfilm3">Encanto</label><br />
+      <br />
+      <input type="submit" id="Küldés" />
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
