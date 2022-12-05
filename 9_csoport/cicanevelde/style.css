@@ -1,0 +1,26 @@
+span.error {
+  color: red;
+  font-weight: bold;
+}
+span.success {
+  color: green;
+  font-weight: bold;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+form * {
+  display: block;
+  width: 200px;
+}
+body {
+  background-color: beige;
+}
+table td,
+table th {
+  border: 1px solid orange;
+  padding: 10px;
+  text-align: center;
+}

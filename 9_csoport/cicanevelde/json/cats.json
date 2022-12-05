@@ -1,0 +1,82 @@
+{
+    "vitek": {
+        "garfield": {
+            "breed": "perzsa",
+            "favorite_food": "lasagne",
+            "num_of_pets": 82
+        },
+        "nermal": {
+            "breed": "cirmos",
+            "favorite_food": "tej",
+            "num_of_pets": 7006
+        },
+        "sanyi": {
+            "breed": "",
+            "favorite_food": "",
+            "num_of_pets": 20
+        },
+        "sanyika": {
+            "breed": "kever\u00e9k",
+            "favorite_food": "kolb\u00e1szcs\u00fccs\u00f6k",
+            "num_of_pets": 22
+        },
+        "r\u00f3bert gida": {
+            "breed": "ember",
+            "favorite_food": "medveh\u00fas",
+            "num_of_pets": 23
+        },
+        "Kiscica": {
+            "breed": "kever\u00e9k",
+            "favorite_food": "hal",
+            "num_of_pets": 16
+        }
+    },
+    "bogd\u00e1n": {
+        "g\u00e1rfild": {
+            "breed": "perzsa",
+            "favorite_food": "lazannya",
+            "num_of_pets": 35
+        },
+        "nerm\u00e1l": {
+            "breed": "cirmos",
+            "favorite_food": "vir\u00e1gok",
+            "num_of_pets": 64
+        },
+        "lucifer": {
+            "breed": "cirmos",
+            "favorite_food": "cicat\u00e1p",
+            "num_of_pets": 26
+        },
+        "Garfield": {
+            "breed": "perzsa",
+            "favorite_food": "kaja",
+            "num_of_pets": 8
+        }
+    },
+    "cicam\u00e1nia": {
+        "Gertr\u00fad": {
+            "breed": "Angol szetter",
+            "favorite_food": "Kuty\u00e1k",
+            "num_of_pets": 5
+        }
+    },
+    "opera": {
+        "garfild": {
+            "breed": "jon",
+            "favorite_food": "jon",
+            "num_of_pets": 3
+        },
+        "i": {
+            "breed": "am",
+            "favorite_food": "sorry",
+            "num_of_pets": 4
+        }
+    },
+    "anyuka": {
+        "kormi": {
+            "breed": "fekete cica",
+            "favorite_food": "korom",
+            "num_of_pets": 10
+        }
+    }
+}
