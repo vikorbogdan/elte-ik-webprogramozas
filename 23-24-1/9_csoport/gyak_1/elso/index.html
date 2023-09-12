@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cím</title>
+</head>
+<body>
+    <h1>Cím</h1>
+    <ul>
+        <li>Egy</li>
+        <li>Egy</li>
+        <li>Három</li>
+        <li>Négy</li>
+    </ul>
+    <p class="kiscica"></p>  
+    <div id="cica"></div>
+    <script>
+        // Ez egy konzolra írás
+        // console.log("Hello");
+        // /*
+        // Ezek is azok lesznek
+        // */
+        console.warn("Vigyázz!");
+        console.error("Valami nagy baj van!");
+        // a var kulcsszó elavult
+        let valtozo = "ELTE";
+        console.log(valtozo);
+        const a = 16;
+        let b = 4;
+        let logikai1 = false;
+        let logikai2 = true;
+        let logikai3 = 3<4;
+
+        console.log(logikai1,logikai2,logikai3, a, b)
+
+        // Vezérlési szerkezetek
+
+        if(logikai1){
+            console.log("Logikai 1 te vagy a legjobb");
+        }else if(logikai2){
+            console.log("Az l1 nem jött be de a logikai 2 király!")
+        }else{
+            console.log("else")
+        }
+
+        for(let i = 0; i< 10; i++){
+            console.log(i*2)
+        }
+        
+        let j = 0;
+        while (j < 20){
+            console.log(j);
+            j++; 
+        }
+        console.log("___")
+
+        j = 0;
+        do{
+            console.log(j)
+            j++;
+        }while(j<10);
+    
+        // // Összetett típusok
+
+        let tomb = [1, "egy", true, [1, "kettő", 4], false , undefined];
+        console.log(tomb)
+
+        tomb[30] = "vámpír"
+
+        for (let i = 0; i < tomb.length; i++) {
+            console.log(tomb[i])
+        }
+
+        const tomb2 = ["Álmos", "Előd", "Ond", "Kond"];
+        
+        for(vezer of tomb2){
+            console.log(vezer);
+        }
+        console.log("____")
+        for(index in tomb2){
+            console.log(tomb2[index]);
+        }
+
+        // // Függvények
+
+        function osszeadas(a,b){
+            return a+b;
+        }
+        console.log(osszeadas(5,6));
+
+        function kiiras(a){
+            console.log(`Függvény: ${a}`);
+        }
+
+        const fuggveny = function(){
+            return "fuggveny";
+        }
+
+        const fuggveny2 = (a,b) => {
+            return a+b;
+        }
+        // vagy
+        // (a,b) => a+b;
+
+
+        // Tömbfüggvények
+
+        let my_array = [1,2,3,4,5,6,7]
+
+      /* Tömbfüggvények */
+      
+      // forEach -> Lefuttat egy adott függvényt minden elemre
+      my_array.forEach((elem) => kiiras(elem));
+      // map -> Leképezést készít egy tömbről, azáltal, hogy lefuttat minden elemre egy függvényt (visszatérési értékkel)
+      tomb2 = my_array.map((elem) => elem * 2);
+      // indexOf -> Egy érték első előfordulásának indexét adja meg
+      console.log(my_array.indexOf(5));
+      // lastIndexOf -> Egy érték utolsó előfordulásának indexét adja meg
+      console.log(my_array.lastIndexOf(3));
+      // every -> Megadja, hogy egy adott feltétel teljesül-e a tömb összes elemére
+      console.log(my_array.every((elem) => elem > 5));
+      // some -> Megadja, hogy van-e olyan elem a tömbben, amire teljesül egy adott feltétel.
+      console.log(my_array.some((elem) => elem > 5));
+      // push -> Hozzáad egy elemet a tömbhöz (végére)
+      my_array.push("cica");
+      console.log(my_array);
+      // pop -> Eltávolít egy elemet a tömb végéről és visszatér vele
+      my_array.pop();
+      console.log(my_array);
+    </script>
+</body>
+</html>
