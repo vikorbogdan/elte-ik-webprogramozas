@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Űrlapkezelés</title>
+  </head>
+  <body>
+    <form action="">
+      <ul id="hibak"></ul>
+      Név:
+      <input type="text" id="nev" /> <br />
+      Kor:
+      <input type="text" id="kor" /> <br />
+      Érdeklődési terület:
+      <select id="erd">
+        <option value="">Kérem, válasszon...</option>
+        <option value="film">Film</option>
+        <option value="olvasas">Olvasás</option>
+        <option value="sport">Sport</option>
+      </select>
+      <br />
+      Válaszd ki hogy melyik a kedvenc sorozatod:
+      <br />
+      <input type="radio" name="sorozatok" id="sorozat1" value="breaking_bad" />
+      <label for="sorozat1">Breaking Bad</label>
+      <br />
+      <input type="radio" name="sorozatok" id="sorozat2" value="a_falka" />
+      <label for="sorozat2">A Falka</label>
+      <br />
+      <input type="radio" name="sorozatok" id="sorozat3" value="gyozike_show" />
+      <label for="sorozat3">Győzike Show</label>
+      <br />
+      <input type="submit" id="Küldés" value="Küldés" />
+    </form>
+  </body>
+  <script src="script.js"></script>
+</html>
