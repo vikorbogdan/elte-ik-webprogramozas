@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Alexandria:wght@400;500&display=swap");
+:root {
+  --main-red: #ee3322;
+  --main-black: #3b3b3b;
+  font-family: "Alexandria", sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--light-gray);
+  text-align: center;
+  color: var(--main-black);
+}
+body > h1 {
+  margin: 20px 0 0 0;
+}
+
+nav {
+  box-shadow: 0px 4px 13px -5px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 4px 13px -5px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 4px 13px -5px rgba(0, 0, 0, 0.25);
+  height: 50px;
+  color: var(--main-red);
+  max-width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 50px 0 50px;
+}
+
+nav a h1 {
+  margin: 0;
+  color: var(--light-gray);
+}
+
+nav form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+li {
+  flex-basis: 100px;
+  min-width: 50vw;
+  max-width: 50vw;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  background-color: rgb(229, 229, 229);
+  border-radius: 20px;
+  align-items: center;
+  gap: 20px;
+}
+li div.inputs input[type="radio"] {
+  margin: 0;
+}
+li div {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+form button {
+  display: block;
+  margin: 20px auto;
+  font-family: "Alexandria", sans-serif;
+  font-size: 20px;
+}
+ul {
+  gap: 20px;
+  list-style: none;
+  margin: 20px 0 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+span {
+  color: var(--main-red);
+}

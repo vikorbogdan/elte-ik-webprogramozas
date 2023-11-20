@@ -1,0 +1,13 @@
+table {
+  border-collapse: separate;
+  border-spacing: 2px;
+  margin: 0px auto;
+  font-family: "Comic Sans MS";
+}
+td,
+th {
+  padding: 5px;
+  text-align: center;
+  background-color: rgb(254, 225, 173);
+  margin: 2px;
+}
