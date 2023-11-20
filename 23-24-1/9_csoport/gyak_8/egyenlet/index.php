@@ -57,9 +57,9 @@ if (isset($_GET["a"]) && isset($_GET["b"])) {
     </ul> <br />
     <form>
         <label for="a">Az "a" értéke</label>
-        <input type="text" id="a" name="a" />
+        <input value="<?= $_GET["a"] ?? "" ?>" type="text" id="a" name="a" />
         <label for="b">, a "b" értéke pedig</label>
-        <input type="text" id="b" name="b" />.
+        <input value="<?= $_GET["b"] ?? "" ?>" type="text" id="b" name="b" />.
         <input type="submit" value="Számítás">
     </form> <br />
     <?php if ($megoldas != "") : ?>
