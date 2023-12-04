@@ -8,7 +8,7 @@ if (!function_exists('str_contains')) {
     }
 }
 
-$users = [
+$foxes = [
     [
         "name" => "Vuk",
         "img" => "https://images.unsplash.com/photo-1560809451-9e77c2e8214a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=100&h=100&q=80"
@@ -40,7 +40,7 @@ if (isset($_GET["search"])) {
 // Pl. A "ró" kifejezésre listázza ki a "Róka Úr" illetve "Róka Koma" felhasználókat.
 
 $filtered_users = [];
-foreach ($users as $user) {
+foreach ($foxes as $user) {
     if (str_contains(strtolower($user["name"]), strtolower($keyword))) {
         $filtered_users[] = $user;
     }
